@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammed Sarfras P C - Data Scientist & AI Specialist Portfolio">
-    <title>Muhammed Sarfras P C - Data Scientist</title>
+    <meta name="description" content="Muhammed Sarfras P C - ML Engineer & AI Specialist Portfolio">
+    <title>Muhammed Sarfras P C - ML Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/fevicon-modified.png">
 </head>
 <body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="circle-1 bg-circle"></div>
+        <div class="circle-2 bg-circle"></div>
+    </div>
+    <div class="grid-bg"></div>
+
     <header id="top">
         <div class="container header-content">
             <div class="logo">
@@ -31,14 +38,14 @@
         </div>
     </header>
 
-    <section id="about" class="hero fade-in">
+    <section id="about" class="hero">
         <div class="hero-text">
-            <h1>Data <span class="highlight">Scientist</span></h1>
-            <p>Turning complex data into actionable insights through advanced analytics and machine learning. Focused on developing AI-driven solutions for real-world problems.</p>
-            <p>Welcome to my portfolio. I'm passionate about AI and data science.</p>
+            <h1><span class="highlight">Machine Learning</span></h1>
+            <p>Hi, I'm glad you're here.</p>
+            <p>I'm an expert in NLP, RAG architectures, and time-series forecasting. I focus on deploying scalable ML solutions with MLOps best practices, and I love the challenge of transforming complex business requirements into production-ready pipelines that include monitoring and explainability.</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn">Get in Touch</a>
-                <a href="img/Resume.pdf" download="My_CV.pdf" class="btn">Download CV</a>
+                <a href="img/personal_resume.pdf" target="_blank" class="btn">View Resume</a>
                 <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank" rel="noopener" class="btn outline">View LinkedIn</a>
             </div>
         </div>
@@ -53,149 +60,260 @@
         </div>
     </section>
 
-    <section id="skills" class="skills fade-in">
+    <section id="skills" class="skills">
         <h2 class="section-title">Technical Expertise</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Programming</h3>
                 <div class="skill-list">
                     <span class="skill-tag">Python</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">SQL</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Data Science</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Deep Learning</span>
-                    <span class="skill-tag">NLP</span>
-                    <span class="skill-tag">Statistical Analysis</span>
-                    <span class="skill-tag">Data Visualization</span>
-                    <span class="skill-tag">Predictive Modeling</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Frameworks</h3>
+                <h3>ML/DL Frameworks</h3>
                 <div class="skill-list">
                     <span class="skill-tag">TensorFlow</span>
                     <span class="skill-tag">PyTorch</span>
                     <span class="skill-tag">Scikit-learn</span>
-                    <span class="skill-tag">Seaborn</span>
+                    <span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">Transformers</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">Sentence-Transformers</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data & Analytics</h3>
+                <div class="skill-list">
                     <span class="skill-tag">Pandas</span>
                     <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">SHAP</span>
+                    <span class="skill-tag">LIME</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
                     <span class="skill-tag">Tableau</span>
                     <span class="skill-tag">Power BI</span>
-                    <span class="skill-tag">Django</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>MLOps & Deployment</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">MLflow</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Streamlit</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">ChromaDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Specializations</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">Fine-Tuning</span>
+                    <span class="skill-tag">Time-Series Forecasting</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Clustering</span>
+                    <span class="skill-tag">XAI</span>
+                    <span class="skill-tag">Anomaly Detection</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects fade-in">
+    <section id="projects" class="projects">
         <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="major">Major Projects</button>
+            <button class="filter-btn" data-filter="mini">Mini Projects</button>
+        </div>
+        
         <div class="project-grid">
-            <div class="project-card">
+            <!-- Major Projects -->
+            <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="img/advertising-1.jpg" alt="Customer Segmentation project visualization">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Crypto AI Analytics Platform">
                 </div>
                 <div class="project-content">
-                    <h3>Customer Segmentation</h3>
-                    <p>Used unsupervised learning techniques to segment customers of an e-commerce platform for targeted marketing campaigns.</p>
+                    <h3>Crypto AI Analytics Platform</h3>
+                    <p>Architected unified MCP monolith for multi-horizon forecasting, RAG, and on-chain analytics serving 1000+ queries/day with production RAG implementation.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="View Customer Segmentation Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="#" aria-label="View Customer Segmentation GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/crypto-analytics-platform" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+            
+            <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="img/advertising-1.jpg" alt="Predictive Maintenance project visualization">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="RAG Chatbot for Architecture Students">
                 </div>
                 <div class="project-content">
-                    <h3>Predictive Maintenance</h3>
-                    <p>Developed a machine learning model to predict equipment failure in manufacturing, reducing downtime by 35%.</p>
+                    <h3>RAG Chatbot for Architecture Students</h3>
+                    <p>A LangChain-powered RAG chatbot designed to assist Bachelor of Architecture students with 5th semester coursework, studio queries, and design theory.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="View Predictive Maintenance Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="#" aria-label="View Predictive Maintenance GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/barch-rag-chatbot" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+
+            <!-- Mini Projects -->
+            <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/advertising-1.jpg" alt="Sentiment Analysis API project visualization">
+                    <img src="https://images.unsplash.com/photo-1532938911079-2b06ac872252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Medical Insurance Costs">
                 </div>
                 <div class="project-content">
-                    <h3>Sentiment Analysis API</h3>
-                    <p>Created an NLP-based API that analyzes sentiment in customer reviews with 92% accuracy.</p>
+                    <h3>Medical Insurance Costs</h3>
+                    <p>Machine learning model to predict medical insurance costs using regression analysis and feature engineering techniques.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="View Sentiment Analysis API Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="#" aria-label="View Sentiment Analysis API GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/medical-insurance-costs" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/advertising-1.jpg" alt="Retail Sales Forecasting project visualization">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Credit Card Customer Clustering">
                 </div>
                 <div class="project-content">
-                    <h3>Retail Sales Forecasting</h3>
-                    <p>Implemented time series models to forecast retail sales, improving inventory management by 25%.</p>
+                    <h3>Credit Card Customer Clustering</h3>
+                    <p>Unsupervised learning project to segment credit card customers using K-means clustering for targeted marketing strategies.</p>
                     <div class="project-links">
-                        <a href="#" aria-label="View Retail Sales Forecasting Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="#" aria-label="View Retail Sales Forecasting GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/Credit-Card-Customer-Clustering" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="://images.unsplash.com/photo-1682685797140-c17807f8f217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Spam Detector">
+                </div>
+                <div class="project-content">
+                    <h3>Spam Detector</h3>
+                    <p>NLP-based email spam detection system using machine learning algorithms to classify emails as spam or legitimate.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/spam-detector" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="://images.unsplash.com/photo-1617498115500-a71a00d2f6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Delivery Time Predictor">
+                </div>
+                <div class="project-content">
+                    <h3>Delivery Time Predictor</h3>
+                    <p>Machine learning model to predict delivery times for logistics optimization using regression techniques and feature engineering.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/Delivery-Time-Predictor" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden projects (shown with Show More) -->
+            <div class="project-card hidden" data-category="mini">
+                <div class="project-thumb">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="HR Analytics Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Interactive Tableau dashboard for HR analytics including employee performance, retention analysis, and workforce insights.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/hr-analytics-dashboard-tableau" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card hidden" data-category="mini">
+                <div class="project-thumb">
+                    <img src="://images.unsplash.com/photo-1682685797140-c17807f8f217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mall Customer Segmentation">
+                </div>
+                <div class="project-content">
+                    <h3>Mall Customer Segmentation</h3>
+                    <p>Customer segmentation analysis for mall visitors using clustering algorithms to identify customer behavior patterns.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/Mall-Customer-Segmentation" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card hidden" data-category="mini">
+                <div class="project-thumb">
+                    <img src="://images.unsplash.com/photo-1682685797140-c17807f8f217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sentiment Analysis">
+                </div>
+                <div class="project-content">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Natural language processing project for sentiment analysis of text data using machine learning and NLP techniques.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/Sentiment-Analysis" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Show More Button -->
+        <div class="show-more-container">
+            <button class="show-more-btn" id="showMoreBtn">Show More Projects</button>
+        </div>
     </section>
 
-    <section id="experience" class="timeline fade-in">
+    <section id="experience" class="timeline">
         <h2 class="section-title">Experience & Education</h2>
         <div class="timeline-grid">
             <div class="timeline-item">
                 <div class="timeline-dot" aria-hidden="true"></div>
                 <div class="timeline-content">
-                    <span class="date">Current</span>
-                    <h3>Data Science Student</h3>
-                    <p>Brototype Institute, Kinfra, Calicut</p>
-                    <p>Pursuing advanced Data Science training with focus on machine learning, data engineering, and AI applications.</p>
+                    <span class="date">Oct 2024 – Present</span>
+                    <h3>Machine Learning Engineer Intern</h3>
+                    <p>Brototype – KINFRA, Calicut, Kerala</p>
+                    <p>Designed and deployed production-ready ML pipelines across forecasting, NLP, and anomaly detection. Applied MLOps practices to ensure scalability and reproducibility.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot" aria-hidden="true"></div>
                 <div class="timeline-content">
-                    <span class="date">Oct 2022 - Oct 2024</span>
-                    <h3>Asst. Administrative Manager</h3>
-                    <p>Britco & Bridco Pvt Ltd · Part-time</p>
-                    <p>Managed administrative functions while pursuing Mathematics Honors. Streamlined operations and improved interdepartmental communication.</p>
+                    <span class="date">Oct 2022 – Oct 2024</span>
+                    <h3>Assistant Administrative Manager</h3>
+                    <p>Britco & Bridoo Pvt Ltd – Delhi, India</p>
+                    <p>Streamlined cross-departmental operations while pursuing Mathematics Honors. Enhanced operational efficiency through data-driven decision making.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot" aria-hidden="true"></div>
                 <div class="timeline-content">
-                    <span class="date">Oct 2021 - Jan 2024</span>
-                    <h3>BSc Mathematics Honors</h3>
+                    <span class="date">Oct 2021 – Jun 2024</span>
+                    <h3>BSc Mathematics (Honours)</h3>
                     <p>Delhi University</p>
-                    <p>Developed strong analytical thinking and quantitative skills through rigorous mathematical training.</p>
+                    <p>Specialization: Mathematics, Statistics, Linear Algebra, Calculus. Developed strong analytical thinking and quantitative skills.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    
     <footer id="contact">
         <div class="container footer-content">
             <div class="footer-about">
                 <h3>Let's Connect</h3>
-                <p>I'm always open to discussing new projects, opportunities in data science, or technology in general. Feel free to reach out—I'm comfortable communicating in</p>
+                <p>I'm always open to discussing new projects, opportunities in  Mechine Learning, or technology in general. Feel free to reach out—I'm comfortable communicating in multiple languages.</p>
                 <div class="language-badges">
                     <span class="language-circle">English</span>
                     <span class="language-circle">Hindi</span>
                     <span class="language-circle">Urdu</span>
                     <span class="language-circle">Malayalam</span>
-                    <span class="language-circle">little bit of Arabic</span>
                 </div>
             </div>
             <div class="footer-contact">
@@ -203,19 +321,27 @@
                 <div class="contact-info">
                     <a href="mailto:sarfrasspc@gmail.com"><i class="fas fa-envelope"></i> sarfrasspc@gmail.com</a>
                     <a href="tel:+919846775626"><i class="fas fa-phone"></i> +91 9846775626</a>
-                    <a ><i class="fas fa-map-marker-alt"></i> Mukkom, Calicut, Kerala</a>
+                    <a href="https://maps.app.goo.gl/q5B7hhfwkMRAhtD27" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Mukkom, Calicut, Kerala</a>
                 </div>
             </div>
             <div class="footer-social">
-                <div class="social-links-vertical">
+                <h3>Follow Me</h3>
+                <div class="social-links">
                     <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/sarfraspc" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://leetcode.com/u/sarfras/" target="_blank"><i class="fas fa-code"></i></a>
                     <a href="https://wa.me/+919846775626" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://medium.com/@sarfrasspc" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.kaggle.com/muhammedsarfras" target="_blank"><i class="fab fa-kaggle"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
 </div>
         <script src="script.js"></script>
     
