@@ -272,11 +272,17 @@ document.addEventListener('DOMContentLoaded', function() {
             .typing-wrapper {
                 display: flex;
                 align-items: center;
+                justify-content: flex-start;
                 width: 100%;
                 height: 100%;
                 line-height: 1.2;
                 white-space: nowrap;
                 overflow: hidden;
+            }
+            @media (max-width: 992px) {
+                .typing-wrapper {
+                    justify-content: center;
+                }
             }
             .typing-text {
                 display: inline-block;

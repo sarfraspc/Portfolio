@@ -531,6 +531,7 @@ nav ul li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: var(--spacing-md);
     max-width: var(--container-width);
     margin: 0 auto;
@@ -543,12 +544,13 @@ nav ul li a:hover::after {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-    height: 100%;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     position: relative;
     width: 280px;
     flex-shrink: 0;
+    align-self: stretch;
 }
 
 .project-card::before {
@@ -614,6 +616,7 @@ nav ul li a:hover::after {
 .project-links {
     display: flex;
     gap: var(--spacing-md);
+    margin-top: auto;
 }
 
 .project-links a {
@@ -936,6 +939,18 @@ footer {
         order: 1;
     }
 
+    .hero-text h1 {
+        justify-content: center;
+        white-space: normal;
+        overflow: visible;
+        height: auto;
+    }
+
+    .hero-text h1 .typing-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
     .hero-image {
         order: 0;
     }
@@ -1003,6 +1018,18 @@ footer {
         align-items: center;
     }
 
+    .project-grid {
+        justify-content: center;
+        align-items: center;
+        padding: 0 var(--spacing-sm);
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
     .timeline-grid::before {
         left: 15px;
     }
@@ -1033,6 +1060,15 @@ footer {
 
     .hero-text h1 {
         font-size: 2rem;
+        justify-content: center;
+        white-space: normal;
+        overflow: visible;
+        height: auto;
+    }
+
+    .hero-text h1 .typing-wrapper {
+        justify-content: center;
+        width: 100%;
     }
 
     .hero-text p {
@@ -1056,6 +1092,18 @@ footer {
 
     .project-links {
         justify-content: space-between;
+    }
+
+    .project-grid {
+        justify-content: center;
+        align-items: center;
+        padding: 0 var(--spacing-sm);
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
     .tech-bg {
