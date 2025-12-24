@@ -17,6 +17,39 @@
         <div class="circle-2 bg-circle"></div>
     </div>
     <div class="grid-bg"></div>
+    
+    <!-- Neural Network Background -->
+    <div class="neural-bg">
+        <div class="neural-node" style="--x: 10%; --y: 20%; --delay: 0s;"></div>
+        <div class="neural-node" style="--x: 25%; --y: 60%; --delay: 2s;"></div>
+        <div class="neural-node" style="--x: 40%; --y: 30%; --delay: 4s;"></div>
+        <div class="neural-node" style="--x: 55%; --y: 70%; --delay: 1s;"></div>
+        <div class="neural-node" style="--x: 70%; --y: 25%; --delay: 3s;"></div>
+        <div class="neural-node" style="--x: 85%; --y: 55%; --delay: 5s;"></div>
+        <div class="neural-node" style="--x: 15%; --y: 80%; --delay: 2.5s;"></div>
+        <div class="neural-node" style="--x: 90%; --y: 85%; --delay: 1.5s;"></div>
+        <svg class="neural-connections" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <line x1="10" y1="20" x2="25" y2="60" />
+            <line x1="25" y1="60" x2="40" y2="30" />
+            <line x1="40" y1="30" x2="55" y2="70" />
+            <line x1="55" y1="70" x2="70" y2="25" />
+            <line x1="70" y1="25" x2="85" y2="55" />
+            <line x1="10" y1="20" x2="40" y2="30" />
+            <line x1="25" y1="60" x2="55" y2="70" />
+            <line x1="40" y1="30" x2="70" y2="25" />
+            <line x1="55" y1="70" x2="85" y2="55" />
+            <line x1="15" y1="80" x2="25" y2="60" />
+            <line x1="15" y1="80" x2="55" y2="70" />
+            <line x1="85" y1="55" x2="90" y2="85" />
+        </svg>
+        <div class="data-flow">
+            <span class="data-bit">01</span>
+            <span class="data-bit">10</span>
+            <span class="data-bit">11</span>
+            <span class="data-bit">00</span>
+            <span class="data-bit">01</span>
+        </div>
+    </div>
 
     <header id="top">
         <div class="container header-content">
@@ -142,7 +175,7 @@
                 </div>
                 <div class="project-content">
                     <h3>Crypto AI Analytics Platform</h3>
-                    <p>Architected unified MCP monolith for multi-horizon forecasting, RAG, and on-chain analytics serving 1000+ queries/day with production RAG implementation.</p>
+                    <p>An AI-powered crypto analytics platform integrating forecasting, sentiment, and on-chain intelligence, built with FastAPI, MCP protocol, and MLflow in a monolithic architecture.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
                         <a href="https://github.com/sarfraspc/crypto-analytics-platform" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
@@ -160,6 +193,34 @@
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
                         <a href="https://github.com/sarfraspc/barch-rag-chatbot" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="img/jet.jpg" alt="NASA C-MAPSS Predictive Maintenance">
+                </div>
+                <div class="project-content">
+                    <h3>NASA C-MAPSS Predictive Maintenance</h3>
+                    <p>Sensor-based predictive maintenance project estimating Remaining Useful Life (RUL) of turbofan engines using NASA’s C-MAPSS dataset, feature engineering, and regression models.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/NASA-CMAPSS-Predictive-Maintenance" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="img/yolo.jpg" alt="YOLOv8 Object Detection MLOps">
+                </div>
+                <div class="project-content">
+                    <h3>YOLOv8 Object Detection MLOps</h3>
+                    <p>YOLOv8-Nano object detection API with FastAPI + beautiful web UI. Fully Dockerized, CI-tested, deployed 24/7 on Railway.</p>
+                    <div class="project-links">
+                        <a href="https://object-detection-mlops-production.up.railway.app/" target="_blank" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/object-detection-mlops" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
