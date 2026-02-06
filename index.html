@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Muhammed Sarfras P C - ML Engineer & AI Specialist Portfolio">
     <title>Muhammed Sarfras P C - ML Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Load critical CSS first -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
     <link rel="icon" type="image/png" href="img/fevicon-modified.png">
 </head>
 <body>
@@ -85,7 +99,7 @@
         <div class="hero-image">
             <div class="profile-container">
                 <div class="profile-photo">
-                    <img src="img/avatar.jpg" alt="Muhammed Sarfras P C portrait photo">
+                    <img src="img/avatar.jpg" alt="Muhammed Sarfras P C portrait photo" width="220" height="220" loading="eager" fetchpriority="high">
                 </div>
                 <div class="tech-bg" aria-hidden="true"></div>
                 <div class="heartbeat-line"></div>
@@ -171,7 +185,7 @@
             <!-- Major Projects -->
             <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Crypto AI Analytics Platform">
+                    <img src="img/novum.jpg" alt="Crypto AI Analytics Platform" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Crypto AI Analytics Platform</h3>
@@ -185,7 +199,7 @@
             
             <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="img/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="RAG Chatbot for Architecture Students">
+                    <img src="img/archie.jpg" alt="RAG Chatbot for Architecture Students" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>RAG Chatbot for Architecture Students</h3>
@@ -197,9 +211,24 @@
                 </div>
             </div>
 
+            <!-- CoinReason-7B: first mini project -->
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/jet.jpg" alt="NASA C-MAPSS Predictive Maintenance">
+                    <img src="img/coinreason.jpg" alt="CoinReason-7B: Crypto Market Reasoning Adapter" width="320" height="180" loading="lazy" decoding="async">
+                </div>
+                <div class="project-content">
+                    <h3>CoinReason-7B: Crypto Market Reasoning Adapter</h3>
+                    <p>PEFT (QLoRA) adapter fine-tuned on Mistral-7B to reason about crypto market sentiment and short-horizon implications. Built with Unsloth + Transformers.</p>
+                    <div class="project-links">
+                        <a href="https://huggingface.co/sarfras/coinreason-7b-lora" target="_blank" rel="noopener" aria-label="View Model"><i class="fas fa-link"></i> Model</a>
+                        <a href="https://github.com/sarfraspc/crypto-market-reasoning-llm" target="_blank" rel="noopener" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="img/nasa.jpg" alt="NASA C-MAPSS Predictive Maintenance" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>NASA C-MAPSS Predictive Maintenance</h3>
@@ -213,7 +242,7 @@
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/yolo.jpg" alt="YOLOv8 Object Detection MLOps">
+                    <img src="img/yolo.jpg" alt="YOLOv8 Object Detection MLOps" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>YOLOv8 Object Detection MLOps</h3>
@@ -228,7 +257,7 @@
             <!-- Mini Projects -->
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/markus-frieauff-IJ0KiXl4uys-unsplash.jpg" alt="Medical Insurance Costs">
+                    <img src="img/medical.jpg" alt="Medical Insurance Costs" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Medical Insurance Costs</h3>
@@ -242,7 +271,7 @@
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Credit Card Customer Clustering">
+                    <img src="img/segment.jpg" alt="Credit Card Customer Clustering" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Credit Card Customer Clustering</h3>
@@ -256,7 +285,7 @@
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg" alt="Spam Detector">
+                    <img src="img/spam.jpg" alt="Spam Detector" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Spam Detector</h3>
@@ -270,7 +299,7 @@
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/rowan-freeman-clYlmCaQbzY-unsplash.jpg" alt="Delivery Time Predictor">
+                    <img src="img/delivery.jpg" alt="Delivery Time Predictor" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Delivery Time Predictor</h3>
@@ -285,7 +314,7 @@
             <!-- Hidden projects (shown with Show More) -->
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="HR Analytics Dashboard">
+                    <img src="img/tableau.jpg" alt="HR Analytics Dashboard" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>HR Analytics Dashboard</h3>
@@ -299,7 +328,7 @@
 
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/raymond-yeung-7cJdB0OsHAM-unsplash.jpg" alt="Mall Customer Segmentation">
+                    <img src="img/mall.jpg" alt="Mall Customer Segmentation" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Mall Customer Segmentation</h3>
@@ -313,7 +342,7 @@
 
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/claudio-schwarz-FMJAYeRwtDY-unsplash.jpg" alt="Sentiment Analysis">
+                    <img src="img/segment.jpg" alt="Sentiment Analysis" width="320" height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Sentiment Analysis</h3>
@@ -406,8 +435,28 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
+    <!-- Image Lightbox -->
+    <div class="image-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="image-lightbox__close" aria-label="Close image view">&times;</button>
+        <div class="image-lightbox__inner">
+            <button class="image-lightbox__nav image-lightbox__nav--prev" aria-label="Previous project image">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="image-lightbox__image-wrapper">
+                <img src="" alt="">
+                <div class="image-lightbox__caption">
+                    <div class="image-lightbox__title"></div>
+                    <div class="image-lightbox__hint">Click outside or press Esc to close</div>
+                </div>
+            </div>
+            <button class="image-lightbox__nav image-lightbox__nav--next" aria-label="Next project image">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
 </div>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     
 </body>
 </html>
