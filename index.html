@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Muhammed Sarfras P C - ML Engineer & AI Specialist Portfolio">
     <title>Muhammed Sarfras P C - ML Engineer</title>
-    
+
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://images.unsplash.com">
-    
+
     <!-- Load critical CSS first -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Load non-critical CSS asynchronously -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></noscript>
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    </noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
     <link rel="icon" type="image/png" href="img/fevicon-modified.png">
 </head>
+
 <body>
     <!-- Background Animation -->
     <div class="bg-animation">
@@ -31,7 +39,7 @@
         <div class="circle-2 bg-circle"></div>
     </div>
     <div class="grid-bg"></div>
-    
+
     <!-- Neural Network Background -->
     <div class="neural-bg">
         <div class="neural-node" style="--x: 10%; --y: 20%; --delay: 0s;"></div>
@@ -89,17 +97,22 @@
         <div class="hero-text">
             <h1><span class="highlight">Machine Learning</span></h1>
             <p>Hi, I'm glad you're here.</p>
-            <p>I'm an expert in NLP, RAG architectures, and time-series forecasting. I focus on deploying scalable ML solutions with MLOps best practices, and I love the challenge of transforming complex business requirements into production-ready pipelines that include monitoring and explainability.</p>
+            <p>I'm an expert in NLP, RAG architectures, and time-series forecasting. I focus on deploying scalable ML
+                solutions with MLOps best practices, and I love the challenge of transforming complex business
+                requirements into production-ready pipelines that include monitoring and explainability.</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn">Get in Touch</a>
-                <a href="img/personal_resume.pdf" target="_blank" class="btn">View Resume</a>
-                <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank" rel="noopener" class="btn outline">View LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1eFSgyUBYHAU_CgFVJGP2JcE6wdlaE9c2/view" target="_blank"
+                    class="btn">View Resume</a>
+                <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank" rel="noopener"
+                    class="btn outline">View LinkedIn</a>
             </div>
         </div>
         <div class="hero-image">
             <div class="profile-container">
                 <div class="profile-photo">
-                    <img src="img/avatar.jpg" alt="Muhammed Sarfras P C portrait photo" width="220" height="220" loading="eager" fetchpriority="high">
+                    <img src="img/avatar.jpg" alt="Muhammed Sarfras P C portrait photo" width="220" height="220"
+                        loading="eager" fetchpriority="high">
                 </div>
                 <div class="tech-bg" aria-hidden="true"></div>
                 <div class="heartbeat-line"></div>
@@ -174,39 +187,62 @@
 
     <section id="projects" class="projects">
         <h2 class="section-title">Featured Projects</h2>
-        
+
         <div class="project-filter">
             <button class="filter-btn active" data-filter="all">All Projects</button>
             <button class="filter-btn" data-filter="major">Major Projects</button>
             <button class="filter-btn" data-filter="mini">Mini Projects</button>
         </div>
-        
+
         <div class="project-grid">
             <!-- Major Projects -->
             <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="img/novum.jpg" alt="Crypto AI Analytics Platform" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/novum.jpg" alt="Crypto AI Analytics Platform" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Crypto AI Analytics Platform</h3>
-                    <p>An AI-powered crypto analytics platform integrating forecasting, sentiment, and on-chain intelligence, built with FastAPI, MCP protocol, and MLflow in a monolithic architecture.</p>
+                    <p>An AI-powered crypto analytics platform integrating forecasting, sentiment, and on-chain
+                        intelligence, built with FastAPI, MCP protocol, and MLflow in a monolithic architecture.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/crypto-analytics-platform" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/crypto-analytics-platform" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="project-card" data-category="major">
                 <div class="project-thumb">
-                    <img src="img/archie.jpg" alt="RAG Chatbot for Architecture Students" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/multi_source.png" alt="Multi-Source RAG Chatbot" width="320" height="180"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="project-content">
+                    <h3>Multi-Source RAG Chatbot</h3>
+                    <p>Enterprise-grade conversational AI processing unstructured data with hybrid search and
+                        document-level security. Built with Django, LangChain, and ChromaDB.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/multi_source_chatbot" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="major">
+                <div class="project-thumb">
+                    <img src="img/archie.jpg" alt="RAG Chatbot for Architecture Students" width="320" height="180"
+                        loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>RAG Chatbot for Architecture Students</h3>
-                    <p>A LangChain-powered RAG chatbot designed to assist Bachelor of Architecture students with 5th semester coursework, studio queries, and design theory.</p>
+                    <p>A LangChain-powered RAG chatbot designed to assist Bachelor of Architecture students with 5th
+                        semester coursework, studio queries, and design theory.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/barch-rag-chatbot" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/barch-rag-chatbot" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
@@ -214,42 +250,86 @@
             <!-- CoinReason-7B: first mini project -->
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/coinreason.jpg" alt="CoinReason-7B: Crypto Market Reasoning Adapter" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/document_intelligent.png" alt="Document Intelligence System" width="320" height="180"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="project-content">
+                    <h3>Document Intelligence System</h3>
+                    <p>AI-powered backend extracting text from images via OCR and answering questions using LLMs. Built
+                        with FastAPI, Tesseract, and FLAN-T5.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/document-intelligence-api" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="img/lexical.png" alt="Lexical Search Engine" width="320" height="180" loading="lazy"
+                        decoding="async">
+                </div>
+                <div class="project-content">
+                    <h3>Lexical Search Engine</h3>
+                    <p>Custom search engine implementing manual TF-IDF and cosine similarity for text retrieval. Built
+                        with FastAPI without external NLP libraries.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/lexical-search-engine" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="mini">
+                <div class="project-thumb">
+                    <img src="img/coinreason.jpg" alt="CoinReason-7B: Crypto Market Reasoning Adapter" width="320"
+                        height="180" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>CoinReason-7B: Crypto Market Reasoning Adapter</h3>
-                    <p>PEFT (QLoRA) adapter fine-tuned on Mistral-7B to reason about crypto market sentiment and short-horizon implications. Built with Unsloth + Transformers.</p>
+                    <p>PEFT (QLoRA) adapter fine-tuned on Mistral-7B to reason about crypto market sentiment and
+                        short-horizon implications. Built with Unsloth + Transformers.</p>
                     <div class="project-links">
-                        <a href="https://huggingface.co/sarfras/coinreason-7b-lora" target="_blank" rel="noopener" aria-label="View Model"><i class="fas fa-link"></i> Model</a>
-                        <a href="https://github.com/sarfraspc/crypto-market-reasoning-llm" target="_blank" rel="noopener" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://huggingface.co/sarfras/coinreason-7b-lora" target="_blank" rel="noopener"
+                            aria-label="View Model"><i class="fas fa-link"></i> Model</a>
+                        <a href="https://github.com/sarfraspc/crypto-market-reasoning-llm" target="_blank"
+                            rel="noopener" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/nasa.jpg" alt="NASA C-MAPSS Predictive Maintenance" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/nasa.jpg" alt="NASA C-MAPSS Predictive Maintenance" width="320" height="180"
+                        loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>NASA C-MAPSS Predictive Maintenance</h3>
-                    <p>Sensor-based predictive maintenance project estimating Remaining Useful Life (RUL) of turbofan engines using NASA’s C-MAPSS dataset, feature engineering, and regression models.</p>
+                    <p>Sensor-based predictive maintenance project estimating Remaining Useful Life (RUL) of turbofan
+                        engines using NASA’s C-MAPSS dataset, feature engineering, and regression models.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/NASA-CMAPSS-Predictive-Maintenance" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/NASA-CMAPSS-Predictive-Maintenance" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/yolo.jpg" alt="YOLOv8 Object Detection MLOps" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/yolo.jpg" alt="YOLOv8 Object Detection MLOps" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>YOLOv8 Object Detection MLOps</h3>
-                    <p>YOLOv8-Nano object detection API with FastAPI + beautiful web UI. Fully Dockerized, CI-tested, deployed 24/7 on Railway.</p>
+                    <p>YOLOv8-Nano object detection API with FastAPI + beautiful web UI. Fully Dockerized, CI-tested,
+                        deployed 24/7 on Railway.</p>
                     <div class="project-links">
-                        <a href="https://object-detection-mlops-production.up.railway.app/" target="_blank" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/object-detection-mlops" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://object-detection-mlops-production.up.railway.app/" target="_blank"
+                            aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
+                        <a href="https://github.com/sarfraspc/object-detection-mlops" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
@@ -257,56 +337,68 @@
             <!-- Mini Projects -->
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/medical.jpg" alt="Medical Insurance Costs" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/medical.jpg" alt="Medical Insurance Costs" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Medical Insurance Costs</h3>
-                    <p>Machine learning model to predict medical insurance costs using regression analysis and feature engineering techniques.</p>
+                    <p>Machine learning model to predict medical insurance costs using regression analysis and feature
+                        engineering techniques.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/medical-insurance-costs" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/medical-insurance-costs" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/segment.jpg" alt="Credit Card Customer Clustering" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/segment.jpg" alt="Credit Card Customer Clustering" width="320" height="180"
+                        loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Credit Card Customer Clustering</h3>
-                    <p>Unsupervised learning project to segment credit card customers using K-means clustering for targeted marketing strategies.</p>
+                    <p>Unsupervised learning project to segment credit card customers using K-means clustering for
+                        targeted marketing strategies.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/Credit-Card-Customer-Clustering" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/Credit-Card-Customer-Clustering" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/spam.jpg" alt="Spam Detector" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/spam.jpg" alt="Spam Detector" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Spam Detector</h3>
-                    <p>NLP-based email spam detection system using machine learning algorithms to classify emails as spam or legitimate.</p>
+                    <p>NLP-based email spam detection system using machine learning algorithms to classify emails as
+                        spam or legitimate.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/spam-detector" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/spam-detector" target="_blank" aria-label="View GitHub"><i
+                                class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/delivery.jpg" alt="Delivery Time Predictor" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/delivery.jpg" alt="Delivery Time Predictor" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Delivery Time Predictor</h3>
-                    <p>Machine learning model to predict delivery times for logistics optimization using regression techniques and feature engineering.</p>
+                    <p>Machine learning model to predict delivery times for logistics optimization using regression
+                        techniques and feature engineering.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/Delivery-Time-Predictor" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/Delivery-Time-Predictor" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
@@ -314,47 +406,56 @@
             <!-- Hidden projects (shown with Show More) -->
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/tableau.jpg" alt="HR Analytics Dashboard" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/tableau.jpg" alt="HR Analytics Dashboard" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>HR Analytics Dashboard</h3>
-                    <p>Interactive Tableau dashboard for HR analytics including employee performance, retention analysis, and workforce insights.</p>
+                    <p>Interactive Tableau dashboard for HR analytics including employee performance, retention
+                        analysis, and workforce insights.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/hr-analytics-dashboard-tableau" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/hr-analytics-dashboard-tableau" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/mall.jpg" alt="Mall Customer Segmentation" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/mall.jpg" alt="Mall Customer Segmentation" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Mall Customer Segmentation</h3>
-                    <p>Customer segmentation analysis for mall visitors using clustering algorithms to identify customer behavior patterns.</p>
+                    <p>Customer segmentation analysis for mall visitors using clustering algorithms to identify customer
+                        behavior patterns.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/Mall-Customer-Segmentation" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/Mall-Customer-Segmentation" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card hidden" data-category="mini">
                 <div class="project-thumb">
-                    <img src="img/segment.jpg" alt="Sentiment Analysis" width="320" height="180" loading="lazy" decoding="async">
+                    <img src="img/segment.jpg" alt="Sentiment Analysis" width="320" height="180" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Sentiment Analysis</h3>
-                    <p>Natural language processing project for sentiment analysis of text data using machine learning and NLP techniques.</p>
+                    <p>Natural language processing project for sentiment analysis of text data using machine learning
+                        and NLP techniques.</p>
                     <div class="project-links">
                         <a href="#" aria-label="View Demo"><i class="fas fa-link"></i> Demo</a>
-                        <a href="https://github.com/sarfraspc/Sentiment-Analysis" target="_blank" aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/sarfraspc/Sentiment-Analysis" target="_blank"
+                            aria-label="View GitHub"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Show More Button -->
         <div class="show-more-container">
             <button class="show-more-btn" id="showMoreBtn">Show More Projects</button>
@@ -370,7 +471,8 @@
                     <span class="date">Oct 2024 – Present</span>
                     <h3>Machine Learning Engineer Intern</h3>
                     <p>Brototype – KINFRA, Calicut, Kerala</p>
-                    <p>Designed and deployed production-ready ML pipelines across forecasting, NLP, and anomaly detection. Applied MLOps practices to ensure scalability and reproducibility.</p>
+                    <p>Designed and deployed production-ready ML pipelines across forecasting, NLP, and anomaly
+                        detection. Applied MLOps practices to ensure scalability and reproducibility.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -379,7 +481,8 @@
                     <span class="date">Oct 2022 – Oct 2024</span>
                     <h3>Assistant Administrative Manager</h3>
                     <p>Britco & Bridoo Pvt Ltd – Delhi, India</p>
-                    <p>Streamlined cross-departmental operations while pursuing Mathematics Honors. Enhanced operational efficiency through data-driven decision making.</p>
+                    <p>Streamlined cross-departmental operations while pursuing Mathematics Honors. Enhanced operational
+                        efficiency through data-driven decision making.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -388,7 +491,8 @@
                     <span class="date">Oct 2021 – Jun 2024</span>
                     <h3>BSc Mathematics (Honours)</h3>
                     <p>Delhi University</p>
-                    <p>Specialization: Mathematics, Statistics, Linear Algebra, Calculus. Developed strong analytical thinking and quantitative skills.</p>
+                    <p>Specialization: Mathematics, Statistics, Linear Algebra, Calculus. Developed strong analytical
+                        thinking and quantitative skills.</p>
                 </div>
             </div>
         </div>
@@ -398,7 +502,8 @@
         <div class="container footer-content">
             <div class="footer-about">
                 <h3>Let's Connect</h3>
-                <p>I'm always open to discussing new projects, opportunities in  Mechine Learning, or technology in general. Feel free to reach out—I'm comfortable communicating in multiple languages.</p>
+                <p>I'm always open to discussing new projects, opportunities in Mechine Learning, or technology in
+                    general. Feel free to reach out. I'm comfortable communicating in multiple languages.</p>
                 <div class="language-badges">
                     <span class="language-circle">English</span>
                     <span class="language-circle">Hindi</span>
@@ -411,21 +516,26 @@
                 <div class="contact-info">
                     <a href="mailto:sarfrasspc@gmail.com"><i class="fas fa-envelope"></i> sarfrasspc@gmail.com</a>
                     <a href="tel:+919846775626"><i class="fas fa-phone"></i> +91 9846775626</a>
-                    <a href="https://maps.app.goo.gl/q5B7hhfwkMRAhtD27" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Mukkom, Calicut, Kerala</a>
+                    <a href="https://maps.app.goo.gl/q5B7hhfwkMRAhtD27" target="_blank" rel="noopener"><i
+                            class="fas fa-map-marker-alt"></i> Mukkom, Calicut, Kerala</a>
                 </div>
             </div>
             <div class="footer-social">
                 <h3>Follow Me</h3>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammedsarfras" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/sarfraspc" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://leetcode.com/u/sarfras/" target="_blank"><i class="fas fa-code"></i></a>
                     <a href="https://wa.me/+919846775626" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://medium.com/@sarfrasspc" target="_blank"><i class="fab fa-medium"></i></a>
                     <a href="https://www.kaggle.com/muhammedsarfras" target="_blank"><i class="fab fa-kaggle"></i></a>
-                    <a href="https://huggingface.co/sarfras" target="_blank" rel="noopener"><i class="fas fa-brain"></i></a>
-                    <a href="https://www.youtube.com/@Aperture-Intelligence" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/sarfras._/?igsh=MWFseDF2MzhqbjZpZw%3D%3D#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://huggingface.co/sarfras" target="_blank" rel="noopener"><i
+                            class="fas fa-brain"></i></a>
+                    <a href="https://www.youtube.com/@Aperture-Intelligence" target="_blank" rel="noopener"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sarfras._/?igsh=MWFseDF2MzhqbjZpZw%3D%3D#" target="_blank"
+                        rel="noopener"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -455,8 +565,9 @@
         </div>
     </div>
 
-</div>
-        <script src="script.js" defer></script>
-    
+    </div>
+    <script src="script.js" defer></script>
+
 </body>
+
 </html>
